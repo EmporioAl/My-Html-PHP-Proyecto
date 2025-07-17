@@ -1,5 +1,5 @@
 <?php
-include 'guardar_citas.php';
+include 'CONEXION.php';
 
 $action = $_POST['action'];
 $id = $_POST['id'];
