@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Tierra y Libertad</title>
+    <style>
+        body {
+            background-color: #8B0000; /* color guindo */
+            color: white; /* para mejor contraste con el fondo oscuro */
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            color: #FFD700; /* opcional: cambia el color de los enlaces */
+        }
+
+        header, nav, main, footer {
+            margin: 20px;
+        }
+
+        table {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="imagenes/Logo1.png" alt="Logo" width="120" /></td>
+                <td><h2>Hospital Tierra y Libertad</h2></td>
+            </tr>
+        </table>
+        <hr />
+    </header>
+
+    <nav>
+        <h3>Contacto</h3>
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="Citas.php">Citas</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        <hr />
+    </nav>
+
+    <main>
+        <article>
+            <h1>¡Contáctanos!</h1>
+            <p>Deja tu recomendación u opinión para ayudarnos a mejorar!</p>
+        </article>
+        <h1>¡Opina!</h1>
+        <form action="Process_contacto.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required /><br /><br />
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escriba su comentario..." required></textarea><br /><br />
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </main>
+
+    <footer>
+        <hr />
+        <p style="text-align: center;"><b>Tel:</b> 818-301-0062 | <a href="mailto:axel_neri01@hotmail.com">Correo Electrónico</a></p>
+    </footer>
+</body>
+</html>
