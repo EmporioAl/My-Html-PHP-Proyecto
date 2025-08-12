@@ -1,17 +1,6 @@
 <?php
 
-$host = "sql206.infinityfree.com";     
-$usuario = "";     
-$contrasena = ""; 
-$base_de_datos = "";
-
-// Crear la conexión usando mysqli
-$conn = new mysqli($host, $usuario, $contrasena, $base_de_datos);
-
-// Verificar la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
+Require ‘CONEXION.php’; //se borró el código duplicado y solo se agregó un “require” hacia el archivo.
 
 // Obtener los datos del formulario
 $nombre = $_POST['nombre'] ?? '';
